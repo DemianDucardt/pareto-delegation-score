@@ -2,13 +2,41 @@
 <html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Your pack is on the way - Qualified - Demian Ducardt</title>
-<style>body{font-family:Inter,Segoe UI,sans-serif;background:#0b1220;color:#e8ecf1;margin:0;padding:40px}.box{max-width:620px;margin:0 auto;background:#111c30;padding:28px;border-radius:12px;border:1px solid #2a3b55}a{color:#ffd166}button{background:#2a7bff;color:#fff;border:0;padding:12px 18px;border-radius:8px;font-size:15px}</style>
+<style>
+:root{--base:#0b1220;--panel:#111c30;--line:#2a3b55;--blue:#2a7bff;--sky:#7fd1ff;--gold:#ffd166;--ink:#e8ecf1;--muted:#c4d0de;--faint:#9fb0c3}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,system-ui,sans-serif;background:var(--base);color:var(--ink);margin:0;padding:40px 20px;font-size:16px;line-height:26px}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:8px}
+.box{max-width:620px;margin:0 auto;background:var(--panel);padding:24px;border-radius:14px;border:1px solid var(--line)}
+.eyebrow{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--sky);background:#12233d;border:1px solid var(--line);border-radius:20px;padding:6px 14px;margin-bottom:14px}
+h1{font-size:48px;line-height:52px;font-weight:800;margin:0 0 10px;color:#fff}
+p{color:var(--muted);margin:10px 0}
+.hero-check{width:84px;height:84px;border-radius:50%;background:var(--blue);display:grid;place-items:center;font-size:44px;font-weight:800;color:#fff;margin-bottom:16px}
+.timeline{margin:20px 0;border-left:3px solid var(--blue);padding-left:0;list-style:none}
+.timeline li{position:relative;padding:0 0 20px 28px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-9px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--blue);border:3px solid #0b1220;box-shadow:0 0 0 2px var(--blue)}
+.timeline b{color:#fff;display:block}
+.timeline span{color:var(--muted);font-size:14px}
+.cta-full{display:block;background:var(--blue);color:#fff;text-align:center;text-decoration:none;border-radius:10px;padding:16px;font-size:16px;font-weight:700;width:100%;margin:18px 0 8px}
+.cta-full:hover{background:#1f6bf0}
+.detail{background:#0b1220;border:1px solid var(--line);border-radius:14px;padding:16px 18px;font-size:14px;color:var(--muted)}
+a{color:var(--gold)}
+.foot{margin-top:16px;font-size:12px;color:var(--faint);text-align:center}
+@media(max-width:700px){h1{font-size:36px;line-height:40px}body{padding:24px 14px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
 </head>
 <body><div class="box">
+<div class="hero-check" aria-hidden="true">✓</div>
+<div class="eyebrow">Qualified route, 300k plus</div>
 <h1>Your pack is on the way.</h1>
 <p>You fit the 300k plus route. Check demian.ducardt@gmail.com test inbox for delivery in this demo. Live version sends automatically.</p>
-<p>Next: email your result to start matching.</p>
-<p><a href="mailto:demian.ducardt@gmail.com?subject=Pareto%20Delegation%20Score%20qualified&body=Revenue%20300k%20plus.%20Please%20send%20pack."><button>Contact by email to book next step</button></a></p>
-<p>What happens: 3 value emails. Inbox SOP. AI agent map. Operator handoff list.</p>
-<div>Built by Demian Ducardt.</div>
+<ol class="timeline">
+<li><b>Step 1. Check your inbox</b><span>Your tier plus 10-task handoff list plus SOP template lands by email.</span></li>
+<li><b>Step 2. Reply to start matching</b><span>Send revenue band plus bottleneck tier. Reply within 1 business day.</span></li>
+</ol>
+<a class="cta-full" href="mailto:demian.ducardt@gmail.com?subject=Pareto%20Delegation%20Score%20qualified&body=Revenue%20300k%20plus.%20Please%20send%20pack.">Contact by email to book next step</a>
+<div class="detail">What happens next. 3 value emails. Inbox SOP. AI agent map. Operator handoff list.</div>
+<div class="foot">Built by Demian Ducardt.</div>
 </div></body></html>

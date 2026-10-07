@@ -5,29 +5,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pareto Delegation Score - Demian Ducardt</title>
 <style>
-body{font-family:Inter,Segoe UI,system-ui,sans-serif;background:#0b1220;color:#e8ecf1;margin:0;padding:24px}
-.card{max-width:680px;margin:0 auto;background:#111c30;border:1px solid #2a3b55;border-radius:14px;padding:28px}
-.eyebrow{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#7fd1ff;background:#12233d;border:1px solid #2a3b55;border-radius:20px;padding:6px 14px;margin-bottom:12px}
-h1{font-size:26px;margin:0 0 8px}
-p{font-size:14px;color:#c4d0de}
-.q{margin:18px 0;padding:16px;background:#0b1220;border-radius:10px}
-.q b{display:block;margin-bottom:10px}
-label{display:block;font-size:13px;margin:6px 0;cursor:pointer}
-button{background:#2a7bff;color:#fff;border:0;border-radius:8px;padding:14px 18px;font-size:15px;font-weight:600;cursor:pointer;margin-top:12px;width:100%}
-#result{display:none;margin-top:18px;padding:18px;background:#0e2a1a;border:1px solid #2ecc71;border-radius:10px}
-#result a{color:#ffd166;font-weight:600}
-a{color:#ffd166}
-footer{margin-top:16px;font-size:12px;color:#9fb0c3}
+:root{--base:#0b1220;--panel:#111c30;--panel2:#12233d;--line:#2a3b55;--blue:#2a7bff;--sky:#7fd1ff;--gold:#ffd166;--ink:#e8ecf1;--muted:#c4d0de;--faint:#9fb0c3}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,system-ui,sans-serif;background:var(--base);color:var(--ink);margin:0;padding:32px 20px;font-size:16px;line-height:26px}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:8px}
+.card{max-width:680px;margin:0 auto;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px}
+.eyebrow{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--sky);background:var(--panel2);border:1px solid var(--line);border-radius:20px;padding:6px 14px;margin-bottom:12px}
+h1{font-size:48px;line-height:52px;font-weight:800;margin:0 0 8px;color:#fff}
+.sub{font-size:16px;line-height:26px;color:var(--muted);margin:0 0 8px}
+.progress{height:6px;background:#1a2a44;border-radius:20px;overflow:hidden;margin:18px 0 6px}
+#bar{height:100%;width:0%;background:var(--blue);border-radius:20px;transition:width .25s ease}
+.pcount{font-size:12px;color:var(--faint);margin-bottom:6px}
+.q{margin:16px 0;padding:20px 20px 14px;background:#0b1220;border:1px solid var(--line);border-radius:14px}
+.q-top{display:flex;gap:16px;align-items:baseline;margin-bottom:12px}
+.num{font-size:48px;line-height:1;font-weight:800;color:var(--sky);flex:0 0 64px}
+.q-text{font-size:16px;line-height:26px;font-weight:700;color:#fff}
+.opt{display:flex;gap:12px;align-items:center;font-size:15px;padding:14px 16px;margin:10px 0;cursor:pointer;background:var(--panel);border:1px solid var(--line);border-radius:14px;min-height:52px}
+.opt:hover{border-color:var(--blue)}
+.opt:has(input:checked){border-color:var(--blue);background:#14294f}
+.opt input{width:20px;height:20px;accent-color:var(--blue);flex:0 0 20px}
+button.main{background:var(--blue);color:#fff;border:0;border-radius:10px;padding:14px 18px;font-size:16px;font-weight:700;cursor:pointer;margin-top:12px;width:100%}
+button.main:hover{background:#1f6bf0}
+#result{display:none;margin-top:18px;padding:24px;background:#141f33;border:2px solid var(--gold);border-radius:14px}
+#result .score{font-size:30px;line-height:36px;font-weight:800;color:var(--gold)}
+#result .tier{font-size:16px;line-height:26px;color:var(--ink);margin:8px 0}
+#result a{color:var(--gold);font-weight:700}
+a{color:var(--gold)}
+footer{margin-top:16px;font-size:12px;color:var(--faint);text-align:center}
+@media(max-width:700px){h1{font-size:36px;line-height:40px}body{padding:20px 14px}.card{padding:20px}.num{font-size:40px;flex-basis:52px}}
+@media(prefers-color-scheme:light){body{background:#0b1220;color:#e8ecf1}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>
 <div class="card">
 <div class="eyebrow">Free 2-minute check</div>
 <h1>Pareto Delegation Score</h1>
-<p>7 honest answers. Your bottleneck tier plus what to hand off first. Contact for test route: demian.ducardt@gmail.com</p>
+<p class="sub">7 honest answers. Your bottleneck tier plus what to hand off first. Contact for test route: demian.ducardt@gmail.com</p>
+<div class="progress" aria-hidden="true"><div id="bar"></div></div>
+<div class="pcount" id="pcount">0 of 7 answered</div>
 <div id="quiz"></div>
-<button onclick="score()">See my result</button>
-<div id="result"></div>
+<button class="main" onclick="score()">See my result</button>
+<div id="result" role="status"></div>
 <footer>Built by Demian Ducardt.</footer>
 </div>
 <script>
@@ -43,18 +62,25 @@ const Q=[
 const quiz=document.getElementById('quiz');
 Q.forEach((t,i)=>{
 let d=document.createElement('div');d.className='q';
-d.innerHTML='<b>'+(i+1)+' of 7. '+t+'</b>'+
-'<label><input type="radio" name="q'+i+'" value="0"> Never</label>'+
-'<label><input type="radio" name="q'+i+'" value="1"> Sometimes</label>'+
-'<label><input type="radio" name="q'+i+'" value="2"> Often</label>'+
-'<label><input type="radio" name="q'+i+'" value="3"> Daily</label>';
+d.innerHTML='<div class="q-top"><div class="num">'+String(i+1).padStart(2,'0')+'</div><div class="q-text">'+(i+1)+' of 7. '+t+'</div></div>'+
+'<label class="opt"><input type="radio" name="q'+i+'" value="0"> Never</label>'+
+'<label class="opt"><input type="radio" name="q'+i+'" value="1"> Sometimes</label>'+
+'<label class="opt"><input type="radio" name="q'+i+'" value="2"> Often</label>'+
+'<label class="opt"><input type="radio" name="q'+i+'" value="3"> Daily</label>';
 quiz.appendChild(d);
+});
+function answered(){let c=0;for(let i=0;i<7;i++){if(document.querySelector('input[name="q'+i+'"]:checked'))c++;}return c;}
+document.addEventListener('change',function(){
+let c=answered();
+document.getElementById('bar').style.width=Math.round(c/7*100)+'%';
+document.getElementById('pcount').textContent=c+' of 7 answered';
 });
 function score(){
 let s=0;for(let i=0;i<7;i++){let v=document.querySelector('input[name="q'+i+'"]:checked');if(v)s+=parseInt(v.value);}
 let r=document.getElementById('result');r.style.display='block';
 let tier=s<=7?'Starter: systems missing. Your first win is one inbox SOP.':s<=14?'Bottleneck: you are the router. Your week gives back 10 tasks.':'AI Behind: random tool use. Your fix is one operator plus agents.';
-r.innerHTML='<b>Result '+s+' of 21. '+tier+'</b><br><br><a href="../06_Funnel/index.html">Get my full pack plus next step by email</a><br>Test contact: demian.ducardt@gmail.com';
+r.innerHTML='<div class="score">Result '+s+' of 21</div><div class="tier">'+tier+'</div><a href="../06_Funnel/index.html">Get my full pack plus next step by email</a><br><span style="font-size:13px;color:#c4d0de">Test contact: demian.ducardt@gmail.com</span>';
+r.focus();
 }
 </script>
 </body>
