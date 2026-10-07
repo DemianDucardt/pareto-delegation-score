@@ -1,0 +1,17 @@
+Task,Owner,Deadline,Status,Priority,Milestone,Link
+Research Pareto offer and proof,Demian Ducardt,2026-10-06,Done,High,M1 Research,01_SecondBrain/01_pareto_offer.md
+Teardown 3 competitors,Demian Ducardt,2026-10-06,Done,High,M1 Research,02_Research/competitor_teardowns.md
+Write ICP plus qualifier math 300k,Demian Ducardt,2026-10-06,Done,High,M1 Research,02_Research/icp_personas_qualifier_math.md
+Lock quiz title Pareto Delegation Score,Demian Ducardt,2026-10-06,Done,High,M2 Offer,05_LeadMagnet/
+Build business map HTML,Demian Ducardt,2026-10-06,Done,High,M2 Offer,03_BusinessMap/business_map.html
+Build quiz app 7 questions static,Demian Ducardt,2026-10-07,Done,High,M3 Build,05_LeadMagnet/quiz.html
+Build landing plus form anchor,Demian Ducardt,2026-10-07,Done,High,M3 Build,06_Funnel/index.html
+Build qualified thank you email CTA,Demian Ducardt,2026-10-07,Done,High,M3 Build,06_Funnel/thank-you-qualified.html
+Build unqualified thank you,Demian Ducardt,2026-10-07,Done,High,M3 Build,06_Funnel/thank-you-unqualified.html
+Write opt in workflow blueprint,Demian Ducardt,2026-10-07,Done,High,M3 Build,07_Workflows/optin_blueprint.json
+Write 3 qualified emails,Demian Ducardt,2026-10-07,Done,High,M3 Build,07_Workflows/nurture_qualified_3.md
+Write 1 other email,Demian Ducardt,2026-10-07,Done,High,M3 Build,07_Workflows/nurture_other_1.md
+Write 5 ads plus image prompts,Demian Ducardt,2026-10-07,Done,High,M4 Launch,08_Ads/
+Record Loom 2 min face on,Demian Ducardt,2026-10-07,Done,High,M4 Launch,09_Loom_PDF/loom_script.md
+Assemble one PDF cover index walkthrough,Demian Ducardt,2026-10-07,Done,High,M4 Launch,09_Loom_PDF/FP_Demian_Ducardt_ParetoBootcamp.pdf
+Test all links incognito,Demian Ducardt,2026-10-07,Done,High,M4 Launch,00_Meta/LINK_INDEX.md

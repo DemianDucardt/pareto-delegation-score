@@ -1,0 +1,62 @@
+---
+title: Webinar Deck Delegation Score
+type: deck
+date: 2026-10-07
+sources: ["https://paretotalent.com", "https://paretotalent.com/wall-of-love", "NotesAndSlides/Pareto_Bootcamp_Day10 - Transcript.txt"]
+status: active
+related: ["MOC.md", "quiz.html", "../06_Funnel/index.html"]
+---
+
+Title: Webinar Deck. Pareto Delegation Score. Owner Demian Ducardt. Date 2026-10-07.
+
+Topic plus promise, 2 lines:
+- Topic: Pareto Delegation Score. Find your bottleneck in 2 minutes.
+- Audience: owner led companies at 300k plus revenue with inbox overload and random AI use. Promise: live quiz plus tier plus 10 tasks to hand off first plus SOP template.
+
+Agenda with times, 5 blocks:
+- 0 to 3 min hook. 12.5 hours lost weekly. $10,750 a month at $200 an hour. Source paretotalent.com ROI block.
+- 3 to 8 min live quiz. 7 questions. Scoring 0 to 21. See my result button.
+- 8 to 14 min tiers plus handoff list. Live scoring readout with 10 tasks to hand off first.
+- 14 to 18 min Pareto Right Hand. 100 plus founders served. 93 percent retention at 12 months. 250 plus pros. 3 matches in 24 hours. Source https://paretotalent.com.
+- 18 to 20 min email CTA to demian.ducardt@gmail.com. Qualified gets pack plus 3 emails. Other gets resource plus 1 email.
+
+Slide 1 title plus owner:
+Pareto Delegation Score. Find your bottleneck in 2 minutes. Demian Ducardt. Pareto Talent Bootcamp 7. Note: open with the result. Tell them they leave with a tier and a handoff list.
+
+Slide 2 hook:
+12.5 hours lost weekly to admin. $10,750 a month gone at a $200 rate. Source paretotalent.com ROI block. Note: name their morning. Inbox owns them before coffee.
+
+Slide 3 quiz:
+7 questions. Never, Sometimes, Often, Daily. Scoring 0 to 21. Link ../06_Funnel/index.html for the pack. Note: run it live. Read each question aloud. Let them score themselves.
+
+Slide 4 tiers:
+Starter 0 to 7: systems missing. Start with one inbox SOP. Bottleneck 8 to 14: you are the router. Hand off 10 tasks this week. AI Behind 15 to 21: random tool use. One operator plus agents. Note: make every tier feel solvable. Each tier ends with one next action.
+
+Slide 5 handoff list, 10 tasks:
+1. Inbox triage. 2. Calendar blocks. 3. Follow ups. 4. Vendor mail. 5. Invoices. 6. CRM notes. 7. Meeting recaps. 8. Hiring inbox. 9. Content repurpose. 10. Weekly report. Note: read slowly. Ask which 4 hurt most.
+
+Slide 6 offer:
+Your AI powered Right Hand. Top 1 percent of 1,000 plus applicants. Trained 40 plus hours before day one. Works your hours, exclusively for you. Source https://paretotalent.com. Note: sell relief, not staff. One person who closes loops.
+
+Slide 7 proof wall, 4 voices:
+- Justin Donald, Lifestyle Investor: "My executive assistant Marina came from Pareto Talent and is just a world-beater. The best EA I have ever had." Source https://paretotalent.com/wall-of-love.
+- Joe Polish, Genius Network: "My executive assistant runs point on critical projects and keeps track of so many endless opportunities. I recommend them on a frequent basis." Source https://paretotalent.com/wall-of-love.
+- Jon Vroman, Front Row Dads: "I just can't even imagine not having my EA right now. I can't fathom a world where she's not a big part of it." Source https://paretotalent.com/wall-of-love.
+- Daneen Goncalves: "Mariela is doing wonderful! It's only day 2 and I am already feeling such a relief that I have her during this crucial time in my business." Source https://paretotalent.com/wall-of-love.
+
+Slide 8 qualifier math:
+Year 1 all in 39,000. That is 36,000 plus 3,000 placement. At 175 per hour it clears at 223 hours a year, 4.3 a week, against 12.5 saved. Note: show the gap. Saved hours dwarf break even hours.
+
+Slide 9 fork, 2 routes:
+- Qualified: 300k plus plus exploring AI help now. Email CTA page. Pack plus 3 value emails.
+- Other: everyone else. Resource page. Pack plus 1 email. Call route opens at 300k plus.
+
+Slide 10 CTA, 2 lines:
+- Email demian.ducardt@gmail.com with revenue band plus bottleneck tier. Reply within 1 business day.
+- Keep Kasim Aslam verbatim: You don't have a people problem. You have a delegation problem. Source https://paretotalent.com. Keep triple verbatim: Find the right people. Give them ownership. Get out of the way.
+
+Export note, 2 lines:
+- Style: Pareto dark plus blue. Inter 28pt titles. Save PDF, share view only.
+- Quiz link inside deck points to quiz.html. Quiz links onward to ../06_Funnel/index.html.
+
+Built by Demian Ducardt.

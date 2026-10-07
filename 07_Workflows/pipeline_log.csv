@@ -1,0 +1,4 @@
+email,revenue_band,route,date
+test@example.com,high,thank-you-qualified.html,2026-10-07
+test2@example.com,mid,thank-you-unqualified.html,2026-10-07
+test3@example.com,low,thank-you-unqualified.html,2026-10-07

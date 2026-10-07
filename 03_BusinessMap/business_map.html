@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pareto Delegation Score - Business Map - Demian Ducardt</title>
+<style>
+:root{--bg:#0b1220;--card:#111c30;--line:#2a3b55;--txt:#e8ecf1;--mut:#9fb0c3;--blue:#2a7bff;--sky:#7fd1ff;--gold:#ffd166;--green:#2ecc71;--red:#e74c3c}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,system-ui,sans-serif;background:var(--bg);color:var(--txt);margin:0;padding:24px;line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto}
+h1{font-size:28px;margin:0 0 6px}
+.sub{color:var(--mut);font-size:13px;margin-bottom:14px}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.toolbar button{background:#182a46;color:var(--txt);border:1px solid var(--line);border-radius:8px;padding:8px 14px;font-size:13px;cursor:pointer}
+.toolbar button:hover{background:#22395e}
+.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:16px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+.stat b{display:block;font-size:18px;color:#fff}
+.stat span{font-size:11px;color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+details.node{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0;overflow:hidden}
+details.node summary{list-style:none;cursor:pointer;padding:14px 14px 12px;display:block}
+details.node summary::-webkit-details-marker{display:none}
+.node summary b{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--sky);margin-bottom:6px}
+.node summary .t{font-size:14px;font-weight:700;color:#fff}
+.node summary .hint{font-size:11px;color:var(--gold);margin-top:6px}
+.node .body{padding:0 14px 14px;font-size:12.5px;color:#cdd8e4;border-top:1px solid #22314b;margin-top:4px;padding-top:10px}
+.node .body ul{margin:8px 0;padding-left:18px}
+.node .body li{margin:4px 0}
+.node a{color:var(--gold);font-size:12px;word-break:break-all}
+.green{border-left:4px solid var(--green)}
+.red{border-left:4px solid var(--red)}
+.diamond summary b:after{content:" [decision]";color:var(--mut);text-transform:none;letter-spacing:0}
+.section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin:20px 0}
+.section h2{margin:0 0 8px;font-size:20px}
+.section p,.section li{font-size:13.5px;color:#cdd8e4}
+.founders{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.fcard{background:#0e1829;border:1px solid var(--line);border-radius:12px;padding:16px}
+.fcard img{width:100%;height:220px;object-fit:cover;border-radius:10px;background:#1c2c48}
+.fcard h3{margin:10px 0 2px;font-size:16px;color:#fff}
+.fcard .role{font-size:12px;color:var(--sky);margin-bottom:8px}
+.trust{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.q{background:#0e1829;border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:12px 14px;font-size:13px;font-style:italic}
+.q span{display:block;font-style:normal;font-size:12px;color:var(--mut);margin-top:6px}
+.avatar{width:44px;height:44px;border-radius:50%;background:#2a7bff;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-style:normal;margin-right:8px;vertical-align:middle}
+.timeline{margin:10px 0 0;padding-left:18px}
+.timeline li{margin:6px 0}
+.legend{font-size:12px;color:var(--mut);margin-top:12px}
+footer{margin:18px 0;font-size:12px;color:var(--mut);text-align:center}
+footer a{color:var(--mut)}
+.math{background:#0e2a1c;border:1px solid var(--green);border-radius:10px;padding:12px;margin:10px 0;color:#fff;font-size:13px}
+.tag{display:inline-block;font-size:11px;background:#182a46;border:1px solid var(--line);border-radius:12px;padding:3px 10px;margin:2px 4px 2px 0;color:var(--sky)}
+@media(max-width:900px){.grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.founders,.trust{grid-template-columns:1fr}}
+@media print{body{background:#fff;color:#111}.section,.stat,details.node,.fcard,.q{background:#fff;color:#111;border-color:#999}details.node .body,details.node summary .t,.section p,.section li{color:#111}details.node{display:block}details.node .body{display:block}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Pareto Delegation Score, Business Map</h1>
+<div class="sub">Owner Demian Ducardt. Date 2026-10-07. Instructor Ivan Bunin. Click any box to expand full detail. Green is built. Red is blueprint, no fake link.</div>
+<div class="toolbar">
+<button onclick="document.querySelectorAll('details.node').forEach(d=>d.open=true)">Expand all</button>
+<button onclick="document.querySelectorAll('details.node').forEach(d=>d.open=false)">Collapse all</button>
+<a href="../06_Funnel/index.html" style="align-self:center;font-size:12px;color:#ffd166">Open live funnel</a>
+</div>
+<div class="stats">
+<div class="stat"><b>$1M+</b><span>Revenue Year 1, May 2025 Lake Como</span></div>
+<div class="stat"><b>100+</b><span>Founders served</span></div>
+<div class="stat"><b>93%</b><span>Retention at 12 months</span></div>
+<div class="stat"><b>250+</b><span>AI operators community</span></div>
+<div class="stat"><b>24h</b><span>To first 3 matches</span></div>
+<div class="stat"><b>$0</b><span>Ad spend, 100% referral</span></div>
+</div>
+
+<div class="grid">
+<details class="node green" id="traffic" open><summary><b>1 Traffic</b><span class="t">Ads 1 to 5 plus organic</span><div class="hint">Click to expand hooks, proof, spend</div></summary><div class="body">
+<ul>
+<li><b>Ad 1 Inbox:</b> You lose 12.5 hours weekly to inbox. Offer 2 min Delegation Score. Proof 100 plus founders, 93 percent retention.</li>
+<li><b>Ad 2 AI Behind:</b> Team uses AI at random. Offer Bottleneck Audit. Proof 250 plus pros.</li>
+<li><b>Ad 3 Burned Hirer:</b> 7 USD VA cost more management. Offer trust route. Proof 3 matches in 24 hours.</li>
+<li><b>Ad 4 Company:</b> Company behind on AI pays founder tax. Offer company pack plus SOP. Proof Freedom 40 guarantee.</li>
+<li><b>Ad 5 Second Brain:</b> Stop running company from memory. Offer Score plus SOP. Proof 40 plus hours trained.</li>
+<li>Organic: LinkedIn founder posts plus referral engine. Pareto hit $1M with zero ads. Source paretotalent.com/about.</li>
+<li>Next: pick Ad 1 to start. 1080 by 1080 PNGs ready in 08_Ads.</li>
+</ul>
+<a href="../08_Ads/ads_pack.md">Open 08_Ads ad copy pack</a></div></details>
+
+<details class="node green" id="landing"><summary><b>2 Landing</b><span class="t">Delegation Score page</span><div class="hint">Click to expand hero, proof, stakes</div></summary><div class="body">
+<ul>
+<li>H1 verbatim: You don't have a people problem. You have a delegation problem. Source https://paretotalent.com.</li>
+<li>Sub: 7 questions. Bottleneck tier plus first 10 tasks to hand off, by email.</li>
+<li>Chips: 100 plus founders, 93 percent retention, 250 plus operators, 3 matches in 24 hours.</li>
+<li>Stakes: 12.5 hours per week. At 200 USD per hour, 10,750 USD per month. Source paretotalent.com ROI block.</li>
+<li>Quotes: Justin Donald plus Jon Vroman, links to wall of love.</li>
+</ul>
+<a href="../06_Funnel/index.html">Open 06_Funnel index.html</a></div></details>
+
+<details class="node green" id="form"><summary><b>3 Form</b><span class="t">Capture plus fork</span><div class="hint">Click to expand fields, logic</div></summary><div class="body">
+<ul>
+<li>Fields: first name, last name, work email, company URL, revenue band, AI use (5 levels), need timing.</li>
+<li>Logic: revenue 300k plus and Exploring AI help now goes qualified. All else goes resource page with test route to demian.ducardt@gmail.com.</li>
+</ul>
+<a href="../06_Funnel/index.html#f">Open form anchor #f</a></div></details>
+
+<details class="node diamond green" id="qualifier"><summary><b>4 Qualifier</b><span class="t">300k plus plus AI need</span><div class="hint">Click to expand math, personas</div></summary><div class="body">
+<div class="math">Year 1 cost 39,000. Founder rate 175 USD per hour. 39,000 divided by 175 equals 223 hours per year. 4.3 hours per week. Pareto saves 12.5. Net gain 8.2 hours per week.</div>
+<ul>
+<li>Qualified: 300k plus plus exploring AI help. Gets resource plus 3 emails.</li>
+<li>Nurture: 100k to 300k. Gets resource plus 1 email.</li>
+<li>Resource only: under 100k. Floor 300k supports 39k hire at 13 percent of revenue.</li>
+<li>Personas: Ops Drowner (my calendar runs me). AI Behind (we are late on AI). Burned Hirer (I need trust).</li>
+</ul>
+<a href="../02_Research/icp_personas_qualifier_math.md">Open qualifier math</a></div></details>
+
+<details class="node green" id="qualified"><summary><b>5a Qualified</b><span class="t">Email CTA path</span><div class="hint">Click to expand emails, CTA</div></summary><div class="body">
+<ul>
+<li>Page: thank-you-qualified.html. Quiz tier plus email CTA. No calendar maze per owner.</li>
+<li>Gets 3 nurture emails, 91 plus 104 plus 102 words. Confirmation plus Day 1 reminder. Contact demian.ducardt@gmail.com for test sends.</li>
+</ul>
+<a href="../06_Funnel/thank-you-qualified.html">Open thank-you-qualified.html</a></div></details>
+
+<details class="node green" id="other"><summary><b>5b Other</b><span class="t">Resource path</span><div class="hint">Click to expand nurture lite</div></summary><div class="body">
+<ul>
+<li>Page: thank-you-unqualified.html. Resource plus 1 email, 97 words.</li>
+<li>Goal: keep goodwill. Invite back at 300k. No hard pitch.</li>
+</ul>
+<a href="../06_Funnel/thank-you-unqualified.html">Open thank-you-unqualified.html</a></div></details>
+
+<details class="node green" id="delivery"><summary><b>6 Delivery</b><span class="t">Opt in workflow</span><div class="hint">Click to expand tags, notify</div></summary><div class="body">
+<ul>
+<li>Blueprint optin_blueprint.json. Tags lead, score tier, revenue band. Creates opportunity. Notifies demian.ducardt@gmail.com.</li>
+<li>Mode off_by_default in live use. Logs to pipeline_log.csv, 3 test rows.</li>
+</ul>
+<a href="../07_Workflows/pipeline.md">Open 07_Workflows pipeline</a></div></details>
+
+<details class="node green" id="nurture"><summary><b>7 Nurture</b><span class="t">3 plus 1 emails</span><div class="hint">Click to expand sequence</div></summary><div class="body">
+<ul>
+<li>Qualified sequence runs tier recap plus handoff list into the 4 guard agent map and closes with match CTA. Other 1 sends resource plus starter tip.</li>
+<li>Tone: client words with real verbs. Source voice pack. CTA closes every message.</li>
+</ul>
+<a href="../07_Workflows/nurture_qualified_3.md">Open nurture copy</a></div></details>
+
+<details class="node red" id="pipeline"><summary><b>8 Pipeline</b><span class="t">Blueprint, no GHL</span><div class="hint">Click to expand honest limits</div></summary><div class="body">
+<ul>
+<li>Stages: opt in, qualified, call via email, client, other. No GHL access. Blueprint plus CSV only.</li>
+<li>Inbox screenshots pending live send. Marked honestly in FP_build.html L11.</li>
+</ul>
+<a href="../07_Workflows/pipeline.md">Open pipeline.md</a></div></details>
+
+<details class="node red" id="booking"><summary><b>9 Booking</b><span class="t">Email CTA only</span><div class="hint">Click to expand copy</div></summary><div class="body">
+<ul>
+<li>No calendar embed per owner. Confirmation plus Day 1 reminder by email.</li>
+<li>Copy in booking_confirmation.md. CTA: reply to demian.ducardt@gmail.com.</li>
+</ul>
+<a href="../07_Workflows/booking_confirmation.md">Open booking copy</a></div></details>
+
+<details class="node green" id="quiz"><summary><b>10 Quiz</b><span class="t">Score app plus deck</span><div class="hint">Click to expand tiers</div></summary><div class="body">
+<ul>
+<li>quiz.html, 7 questions, tiers 0 to 21. Result plus CTA. Pareto dark plus blue.</li>
+<li>Deck webinar_deck.md, 10 slides with agenda plus PDF built. Takeaway: score in 2 minutes beats PDF in 20 minutes.</li>
+</ul>
+<a href="../05_LeadMagnet/quiz.html">Open 05_LeadMagnet quiz</a></div></details>
+
+<details class="node green" id="loom"><summary><b>11 Loom plus PDF</b><span class="t">2 min walkthrough</span><div class="hint">Click to expand script</div></summary><div class="body">
+<ul>
+<li>Script 0 to 120s: magnet, funnel, workflows, ads, founder path to email step. Face on, 1080p.</li>
+<li>Assets: FP_build.html plus Pareto_Right_Hand_Handbook.pdf plus loom_script.md. Video link pending record.</li>
+</ul>
+<a href="../09_Loom_PDF/loom_script.md">Open loom script</a></div></details>
+</div>
+
+<div class="section" id="company">
+<h2>Company: Pareto Talent</h2>
+<p>HQ Scottsdale, Arizona. Founded 2023. First EA graduated April 2024. First client Tim Bratton, 30 min call ran 2.5 hours, 2,097 USD startup cost. Hit $1M May 2025 in Lake Como, Italy. Zero ads, 100 percent referral. Team 80 people across 7 countries including Argentina, Colombia, United States, Bolivia, Chile. Sources: paretotalent.com/about, LinkedIn company profile.</p>
+<p><span class="tag">Top 1 percent operator</span><span class="tag">Latin America based</span><span class="tag">Fluent English</span><span class="tag">40 plus hours AI stack</span><span class="tag">Full time exclusive</span></p>
+<p>Stack taught: Claude, ChatGPT, Canva, CapCut, N8N, Lovable, Operator AI. Program: Delegation Mastermind with Kasim Aslam plus 100 founders, 250 plus operator community, 10-Day AI Bootcamp plus 104 sessions per year, Second Brain OS, Client Success Manager.</p>
+<p>Guarantees: Freedom 40 (40 hours back in 30 days or next month free), Matching (3 profiles in 24 hours), Lifetime Replacement. Pricing Year 1: Annual 39,000. Quarterly 43,000. Monthly 46,200. Source https://paretotalent.com pricing block.</p>
+<img src="https://paretotalent.com/img/pareto-team.jpg" alt="Pareto Talent team photo" style="width:100%;border-radius:10px;margin-top:10px" loading="lazy" onerror="this.style.display='none'">
+<div class="legend">Team photo source: https://paretotalent.com/about, img pareto-team.jpg. If offline, file still reads. Full story: <a href="https://paretotalent.com/about" style="color:#ffd166">paretotalent.com/about</a></div>
+<ul class="timeline">
+<li><b>2018:</b> Kasim hires Ivan from Freelancer.com as EA. Solutions 8 had 6 employees.</li>
+<li><b>2018 to 2022:</b> Ivan rises EA to Tech Lead to CTO. Solutions 8 scales to 200 plus clients, number 1 Google Ads agency worldwide.</li>
+<li><b>2022:</b> 8 figure exit. Solutions 8 acquired. Ivan ran financial and operational due diligence.</li>
+<li><b>Late 2023:</b> Self storage pivot stalls. paretotalent.com found in domain list.</li>
+<li><b>April 2024:</b> First placement. <b>May 2025:</b> $1M. <b>Today:</b> 100 plus founders, drive to 1,000.</li>
+</ul>
+</div>
+
+<div class="section" id="founders">
+<h2>Founders</h2>
+<p>Built by a founder and his former right hand. One built an 8 figure company. The other was the EA who helped him do it.</p>
+<div class="founders">
+<div class="fcard">
+<img src="https://paretotalent.com/img/kasim-headshot.jpg" alt="Kasim Aslam, Co-Founder Pareto Talent" loading="lazy" onerror="this.src='https://assets.cdn.filesafe.space/KjTTNn7q7Rl3zed7tzFS/media/68269830dcadfd145ee05544.jpeg'">
+<h3>Kasim Aslam</h3>
+<div class="role">Co-Founder, CEO. Bootcamp Day 1 voice.</div>
+<p>15 years hiring EAs, dozens of failures. Built Solutions 8 to number 1 Google Ads agency, near 100 employees, over 100M USD ad spend managed, 8 figure all cash exit Oct 2022. Co-author of HIRE. Personally reviews every match with Predictive Index plus 650 plus pre vetted pool. Quote kept verbatim: Find the right people. Give them ownership. Get out of the way.</p>
+<p>Links: <a href="https://paretotalent.com/about" style="color:#ffd166">About</a> / <a href="https://kasimaslam.com/about" style="color:#ffd166">kasimaslam.com/about</a></p>
+</div>
+<div class="fcard">
+<img src="https://paretotalent.com/img/kasim-ivan-colombia.jpg" alt="Ivan Bunin with Kasim Aslam in Colombia" loading="lazy" onerror="this.src='https://assets.cdn.filesafe.space/KjTTNn7q7Rl3zed7tzFS/media/68269830dcadfd145ee05544.jpeg'">
+<h3>Ivan Bunin</h3>
+<div class="role">Co-Founder. Bootcamp instructor Sep 21 to Oct 2 2026.</div>
+<p>Hired at 18 with no playbook. Rose EA to CTO. Managed 8 figure due diligence. First million dollar business at 27. Now trains founders to delegate and operators to own outcomes. Quote from Day 1: Forgiveness better than permission. Paraphrase: short update on time beats perfect late.</p>
+<p>Links: <a href="https://paretotalent.com/about" style="color:#ffd166">About</a> / <a href="https://www.youtube.com/embed/CgcUq1e6P3I" style="color:#ffd166">$1M Lake Como talk</a></p>
+</div>
+</div>
+<div class="legend">Photos load from paretotalent.com. Swap with local headshots before final PDF export if offline review is needed. Owner photo to add: Demian Ducardt, builder of this map. Send PNG to place here.</div>
+</div>
+
+<div class="section" id="trust">
+<h2>Trusted by founders</h2>
+<p>4.9 rating in hero trust row. Source https://paretotalent.com. Review count not published here until live source line is captured. Full wall: <a href="https://paretotalent.com/wall-of-love" style="color:#ffd166">paretotalent.com/wall-of-love</a></p>
+<div class="trust">
+<div class="q"><span class="avatar">JD</span><b>Justin Donald, Lifestyle Investor</b><br>"My executive assistant Marina came from Pareto Talent and is just a world-beater. The best EA I have ever had."<span>Source wall of love</span></div>
+<div class="q"><span class="avatar">JP</span><b>Joe Polish, Genius Network</b><br>"My executive assistant runs point on critical projects and keeps track of so many endless opportunities. I recommend them on a frequent basis."<span>Source wall of love</span></div>
+<div class="q"><span class="avatar">JV</span><b>Jon Vroman, Front Row Dads</b><br>"I just can't even imagine not having my EA right now. I can't fathom a world where she's not a big part of it."<span>Source wall of love</span></div>
+<div class="q"><span class="avatar">DG</span><b>Daneen Goncalves, matched to Mariela Sep 25</b><br>"Mariela is doing wonderful! It's only day 2 and I am already feeling such a relief that I have her during this crucial time in my business."<span>Source wall of love</span></div>
+</div>
+<p style="margin-top:12px">Also on record: Tim Bratton (first client, April 2024). Santiago Uribe (submitted Saturday, interviewed Monday, hired to Architects, Day 10 lines 2581 to 2589). Kevin (Mastermind changed how he leads, paretotalent.com mastermind section).</p>
+<div class="legend">Founder headshots for clients live on wall of love. This map uses initials to avoid hotlinking faces without rights. Send 4 approved headshots to replace initials before submit.</div>
+</div>
+
+<div class="legend">Method: Draw.io style in HTML for portability. Export this page to PNG for PDF. Every box maps to Link Index L1 to L20. Red boxes have dash links, never fakes. Sources stay in NotesAndSlides. Homework stays in Current Project.</div>
+<footer>Built by Demian Ducardt. Sources: https://paretotalent.com, https://paretotalent.com/about, https://paretotalent.com/wall-of-love</footer>
+</div>
+<script>
+// deep link opens target
+if(location.hash){var el=document.querySelector(location.hash);if(el&&el.tagName==='DETAILS')el.open=true;}
+</script>
+</body>
+</html>
