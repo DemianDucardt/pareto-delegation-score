@@ -17,8 +17,8 @@ Numbers to reuse on landing page and ads, 5 verified:
 - 24 hours to first 3 matches. Source https://paretotalent.com hero plus matching section.
 
 Rating check, 2 lines:
-- Site shows 4.9 rating in hero trust row. Source https://paretotalent.com.
-- Review count 84 not shown in Oct 7 fetch. Check https://paretotalent.com/wall-of-love and Google profile before reuse in ads. Do not publish 84 until a live source line is captured.
+- 4.9 stars verified via wall-of-love header: Satisfied founders, 4.9 stars on Google Reviews. Source https://paretotalent.com/wall-of-love.
+- Count 84 dropped everywhere Oct 7 2026. No live source line shows it. Owner verdict was keep, evidence overrules: rating stays, count stays out until a live line is captured.
 
 Client lines, verbatim from Wall of Love, 4 quotes:
 - Justin Donald, Lifestyle Investor: "My executive assistant Marina came from Pareto Talent and is just a world-beater. The best EA I have ever had." Source https://paretotalent.com/wall-of-love.
