@@ -24,6 +24,6 @@ Routing, 5 lines:
 - Keep mode off_by_default in live use.
 - Test with test@example.com high band plus Exploring AI help now.
 - Confirm redirect plus CSV row plus notify draft. Screenshot inboxes.
-- Save proof to proof_inbox_day0.png plus proof_inbox_day2.png. Gaps open.
+- Save proof to proof_inbox_day0.png plus proof_inbox_day2.png. Both live Oct 7 2026.
 
 Built by Demian Ducardt.
