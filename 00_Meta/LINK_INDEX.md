@@ -28,10 +28,10 @@ L16 Ad 2: https://github.com/DemianDucardt/pareto-delegation-score/blob/main/08_
 L17 Ad 3: https://github.com/DemianDucardt/pareto-delegation-score/blob/main/08_Ads/ad3_burned_hirer.png
 L18 Ad 4: https://github.com/DemianDucardt/pareto-delegation-score/blob/main/08_Ads/ad4_company_pack.png
 L19 Ad 5: https://github.com/DemianDucardt/pareto-delegation-score/blob/main/08_Ads/ad5_followup.png
-L20 Loom: - (video pending record, script at https://github.com/DemianDucardt/pareto-delegation-score/blob/main/09_Loom_PDF/loom_script.md)
+L20 Walkthrough video 2 min: https://demianducardt.github.io/pareto-delegation-score/09_Loom_PDF/FP_Demian_Ducardt_walkthrough.mp4 plus script at https://github.com/DemianDucardt/pareto-delegation-score/blob/main/09_Loom_PDF/loom_script.md
 L21 Bonus handbook: https://github.com/DemianDucardt/pareto-delegation-score/blob/main/Pareto_Right_Hand_Handbook.pdf
 L22 Target note: https://github.com/DemianDucardt/pareto-delegation-score/blob/main/02_Research/target_older_companies.md
 
-Rules: full https from public GitHub repo plus Pages, Drive fallback. No bitly. No login wall. Test in incognito. Dash for gaps. Do not fake.
+Rules: full https from public GitHub repo plus Pages. No Drive. No bitly. No login wall. Test in incognito. Dash for gaps. Do not fake.
 
 Built by Demian Ducardt.
