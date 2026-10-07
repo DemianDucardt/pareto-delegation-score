@@ -11,7 +11,7 @@ related: ["ads_pack.md", "../06_Funnel/index.html"]
 
 Assets, 2 entries:
 - [[ads_pack.md]]. 5 angles with hook, offer, qualifier, proof, mechanism, CTA. Short plus direct.
-- 5 PNGs live at 1080 by 1080. ad1_inbox.png plus ad2_ai_behind.png plus ad3_burned_hirer.png plus ad4_company_pack.png plus ad5_second_brain.png. Ad 5 angle is second brain, swappable.
+- 5 PNGs live at 1080 by 1080. ad1_inbox.png plus ad2_ai_behind.png plus ad3_burned_hirer.png plus ad4_company_pack.png plus ad5_followup.png. Second brain file kept as fallback.
 
 Visual spec, 4 lines:
 - Keep one palette Pareto dark plus blue across quiz, funnel, emails, ads.

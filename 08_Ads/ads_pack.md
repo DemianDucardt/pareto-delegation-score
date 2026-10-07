@@ -17,7 +17,7 @@ Ad 3 burned hirer: Cheap help cost you weekends. Offer: trust route with operato
 
 Ad 4 company angle: Every task waits for you when no one owns the handoff. Offer: company pack plus SOP template. Qualifier: 300k plus, 1 plus team, solo OK. Proof: 100 plus founders, 93 percent retention. Mechanism: quiz plus 3 emails. CTA: Get My Delegation Score. Image: Photo Pexels ID 35273151, ops spreadsheet plus call on laptop. Free license.
 
-Ad 5 second brain: Stop running the company from memory. Offer: Delegation Score pack plus SOP system. Qualifier: owner led, no SOPs. Proof: 40 plus hours trained, 250 plus pros. Mechanism: quiz plus email pack. CTA: Get My Delegation Score. Image: Photo Pexels ID 3861964, systems screen with video call. Free license. Owner may swap this angle, files rename cleanly.
+Ad 5 follow up: Every missed follow-up is a deal cooling off. Offer: Delegation Score pack plus follow up system. Qualifier: owner led, deals slip. Proof: 93 percent retention, 3 matches in 24 hours. Mechanism: quiz plus email pack. CTA: Get My Delegation Score. Image: Photo Pexels ID 4226122, founder on video call at laptop. Free license. Second brain angle kept in folder as ad5_second_brain.png fallback.
 
 All copy ends with Built by Demian Ducardt on visuals. All 5 carry the payoff subhead plus the qualifier line. No spend. Copy plus image prompt only.
 
