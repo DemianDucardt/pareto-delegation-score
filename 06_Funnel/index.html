@@ -79,7 +79,7 @@ footer a{color:#9fb0c3}
 <select id="ai"><option>Never use AI tools</option><option>I use chats (ChatGPT, Gemini, Deepseek, etc.)</option><option>I use chats and other tools like video generators, bots, etc.</option><option>I use Claude Code, Codex or similars too</option><option>I have a second brain, all data in my company is collected and stored</option></select>
 <select id="need"><option>Exploring AI help now</option><option>Need help in 30 days</option><option>Just researching</option></select>
 <button type="submit">Send my result pack</button>
-<div style="font-size:12px;color:#555;margin-top:8px">Free. One pack, no spam. Test route delivers to demian.ducardt@gmail.com.</div>
+<div style="font-size:12px;color:#555;margin-top:8px">Free. One pack, no spam. Live route delivers to demian.ducardt@gmail.com.</div>
 </form>
 </div>
 <div class="sticky"><a class="cta" href="#f" style="margin:0">Get my Delegation Score</a></div>
@@ -87,10 +87,10 @@ footer a{color:#9fb0c3}
 <script>
 document.getElementById('f').addEventListener('submit',function(e){
 e.preventDefault();
-var rev=document.getElementById('rev').value;
-var need=document.getElementById('need').value;
-if(rev==='high'&&need==='Exploring AI help now'){window.location.href='thank-you-qualified.html';}
-else{window.location.href='thank-you-unqualified.html';}
+var g=function(id){return document.getElementById(id).value;};
+var rev=g('rev'),need=g('need');
+var dest=(rev==='high'&&need==='Exploring AI help now')?'thank-you-qualified.html':'thank-you-unqualified.html';
+fetch('https://formspree.io/f/xrpepkak',{method:'POST',headers:{'Accept':'application/json','Content-Type':'application/json'},body:JSON.stringify({first:g('fn'),last:g('ln'),email:g('em'),company:g('url'),revenue:rev,ai:g('ai'),need:need,_subject:'Pareto Delegation Score lead'})}).then(function(){window.location.href=dest;}).catch(function(){window.location.href=dest;});
 });
 </script>
 </body>
