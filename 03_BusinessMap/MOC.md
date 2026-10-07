@@ -10,8 +10,8 @@ related: ["business_map.html", "../00_Meta/LINK_INDEX.md"]
 03_BusinessMap shows the route. Owner Demian Ducardt. Date 2026-10-07. One live HTML file. Read this index first.
 
 Assets, 2 entries:
-- [[business_map.html]]. Traffic to call in 7 steps. Green built. Red blueprint. Footer Built by Demian Ducardt.
-- [[business_map.png]]. Export for PDF. Same 11 nodes. Green built. Red blueprint.
+- [[business_map.html]]. Click to expand, 11 nodes plus company plus founders plus trust. Photos via paretotalent.com/about with local fallback. Footer Built by Demian Ducardt.
+- [[business_map.png]]. Export for PDF. Re export needed after Oct 7 expand. Green built. Red blueprint.
 
 Map rules, 4 lines:
 - Open [[business_map.html]] before editing any route.
