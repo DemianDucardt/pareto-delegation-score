@@ -14,10 +14,11 @@ Files, 5 entries:
 - [[loom_script.md]]. 2 min. Face on. 1080p. Timeline 0 to 120s in file.
 - [[avatar_script.md]]. Faceless variant. AI avatar or screen plus AI voice. Full Say blocks.
 - [[FP_Demian_Ducardt_ParetoBootcamp.pdf]]. Built from FP_build.html via WeasyPrint. Matches LINK_INDEX line for line.
+- [[FP_Demian_Ducardt_walkthrough.mp4]]. 1 min 53 s. Owner voice plus face beside the live tour. Landed at L20.
 - [[../00_Meta/LINK_INDEX.md]]. GitHub https swap plus dash rules plus incognito test.
 
 Routing, 2 lines:
-- Record Loom, paste https into L20, re-export PDF, click every link incognito.
+- Video ships at L20. PDF rebuilt from FP_build.html. Every link clicked incognito.
 - Submit at bootcamp.paretotalent.com/finalproject. Deadline EOD Oct 7 Montevideo time.
 
 Built by Demian Ducardt.
