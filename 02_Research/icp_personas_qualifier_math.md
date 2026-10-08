@@ -9,7 +9,7 @@ related: ["MOC.md", "competitor_teardowns.md", "../01_SecondBrain/01_pareto_offe
 
 Title: ICP, Qualifier Math, Personas. Owner Demian Ducardt. Date 2026-10-06.
 
-ICP: US or EU company. Owner led. Revenue 300k plus. Team 1 plus. Inbox owns the founder. No SOPs. AI use is ad hoc. Decision maker reads email. Contact demian.ducardt@gmail.com for tests.
+ICP: US or EU company. Established local. Revenue 300k plus. Team 1 plus. Inbox owns the founder. No SOPs. AI use is ad hoc. Decision maker reads email. Contact demian.ducardt@gmail.com for tests.
 
 Qualifier math, why 300k:
 Annual plan cost 36,000 plus 3,000 fee. Year 1 39,000.
@@ -25,10 +25,10 @@ Qualified: 300k plus plus exploring AI help. Route to email CTA page. Get resour
 Nurture: 100k to 300k. Get resource plus 1 email.
 Unqualified: under 100k. Get resource only.
 
-Personas, 3 to cover company angle:
-Ops Drowner. 12.5 hours lost weekly. Words: my calendar runs me.
-AI Behind. Team uses ChatGPT at random. No agents. Words: we are late on AI.
-Burned Hirer. Paid 7 USD per hour VA. Managed more than saved. Words: I need trust.
+Personas, 3 to cover company angle, each with cause plus client words plus angle source:
+Ops Drowner. Cause: every process runs from memory, no SOPs, inbox owns mornings. Client words: my calendar runs me. Nights and weekends. The business demands more hours than one person can give. Buried in low-value work while real decisions wait. Sources: Day 10 slides 6 and 14 symptom list, Pareto_Bootcamp_Day10.pdf. Angle: Ad 1 inbox plus Ad 4 company pack.
+AI Behind. Cause: team pastes answers into chats at random, nothing compounds, no agents. Client words: we are late on AI. How is this different from the AI tools I already use. I do not have time to train someone right now. Sources: paretotalent.com FAQ block, Day 10 slide 7 gap rule. Angle: Ad 2 AI behind plus quiz tier AI Behind 15 to 21.
+Burned Hirer. Cause: a previous cheap hire created more management work than it saved, no vetting, no accountability. Client words: I need trust. I have tried a VA before and it created more work. Cheap help cost me weekends. Sources: paretotalent.com FAQ block, Day 10 slide 6 symptom list. Proof that answers it: 3 matches in 24 hours, Matching Guarantee, Lifetime Replacement. Angle: Ad 3 burned hirer.
 
 Lead magnet title: Pareto Delegation Score. Find your bottleneck in 2 minutes. File label: Something like Pareto Final Project maps to this title for cover.
 

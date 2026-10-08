@@ -18,7 +18,7 @@ Tool pick, 2 options:
 - CapCut desktop free at capcut.com. Screen record plus built-in text to speech plus captions. No avatar, fastest path.
 
 0 to 20s magnet. Show https://demianducardt.github.io/pareto-delegation-score/05_LeadMagnet/quiz.html.
-Say: You lose 12.5 hours a week to admin. At 200 dollars an hour, that reads 10,750 dollars a month. I built the Pareto Delegation Score for owner-led companies behind on AI. Seven questions, two minutes, one bottleneck tier.
+Say: You lose 12.5 hours a week to admin. At 200 dollars an hour, that reads 10,750 dollars a month. I built the Pareto Delegation Score for established local companies behind on AI. Seven questions, two minutes, one bottleneck tier.
 
 20 to 50s landing. Show https://demianducardt.github.io/pareto-delegation-score/06_Funnel/index.html. Scroll hero, chips, form.
 Say: The landing opens with the headline verbatim from paretotalent.com. Proof carries founders served with retention, operators, matches in 24 hours, and the 4.9 Google rating. The form takes name, email, company, revenue, AI level, and timing need. One button sends the pack.

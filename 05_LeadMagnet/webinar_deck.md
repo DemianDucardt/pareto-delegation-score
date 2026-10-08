@@ -11,10 +11,10 @@ Title: Webinar Deck. Pareto Delegation Score. Owner Demian Ducardt. Date 2026-10
 
 Topic plus promise, 2 lines:
 - Topic: Pareto Delegation Score. Find your bottleneck in 2 minutes.
-- Audience: owner led companies at 300k plus revenue with inbox overload and random AI use. Promise: live quiz plus tier plus 10 tasks to hand off first plus SOP template.
+- Audience: established local companies at 300k plus revenue with inbox overload and random AI use. Promise: live quiz plus tier plus 10 tasks to hand off first plus SOP template.
 
 Agenda with times, 5 blocks:
-- 0 to 3 min hook. 12.5 hours lost weekly. $10,750 a month at $200 an hour. Source paretotalent.com ROI block.
+- 0 to 3 min hook. 12.5 hours lost weekly. $10,750 a month at $200 an hour. Source ROI calculator block at https://paretotalent.com, pricing at https://paretotalent.com/#pricing.
 - 3 to 8 min live quiz. 7 questions. Scoring 0 to 21. See my result button.
 - 8 to 14 min tiers plus handoff list. Live scoring readout with 10 tasks to hand off first.
 - 14 to 18 min Pareto Right Hand. 100 plus founders served. 93 percent retention at 12 months. 250 plus pros. 3 matches in 24 hours. Source https://paretotalent.com.
@@ -24,7 +24,7 @@ Slide 1 title plus owner:
 Pareto Delegation Score. Find your bottleneck in 2 minutes. Demian Ducardt. Pareto Talent Bootcamp 7. Note: open with the result. Tell them they leave with a tier and a handoff list.
 
 Slide 2 hook:
-12.5 hours lost weekly to admin. $10,750 a month gone at a $200 rate. Source paretotalent.com ROI block. Note: name their morning. Inbox owns them before coffee.
+12.5 hours lost weekly to admin. $10,750 a month gone at a $200 rate. Source ROI calculator block at https://paretotalent.com, pricing at https://paretotalent.com/#pricing. Note: name their morning. Inbox owns them before coffee.
 
 Slide 3 quiz:
 7 questions. Never, Sometimes, Often, Daily. Scoring 0 to 21. Link ../06_Funnel/index.html for the pack. Note: run it live. Read each question aloud. Let them score themselves.
@@ -56,7 +56,7 @@ Slide 10 CTA, 2 lines:
 - Keep Kasim Aslam verbatim: You don't have a people problem. You have a delegation problem. Source https://paretotalent.com. Keep triple verbatim: Find the right people. Give them ownership. Get out of the way.
 
 Export note, 2 lines:
-- Style: Pareto dark plus blue. Inter 28pt titles. Save PDF, share view only.
+- Style: Pareto dark plus blue. Inter 28pt titles. Save PDF, share view only. PDF verified 10 pages Oct 7 2026 via WeasyPrint landscape A4.
 - Quiz link inside deck points to quiz.html. Quiz links onward to ../06_Funnel/index.html.
 
 Built by Demian Ducardt.

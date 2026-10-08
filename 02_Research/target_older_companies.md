@@ -9,7 +9,7 @@ related: ["MOC.md", "icp_personas_qualifier_math.md", "../01_SecondBrain/MOC.md"
 
 Title: Target Shift. Older Companies Over Digital Entrepreneurs. Owner Demian Ducardt. Date 2026-10-07.
 
-Thesis: the Delegation Score funnel chases established owner led companies such as trades, clinics, firms, local services. It does not chase digital entrepreneurs such as coaches plus creators. Four cited reasons follow.
+Thesis: the Delegation Score funnel chases established local companies such as trades, clinics, firms, local services. It does not chase digital entrepreneurs such as coaches plus creators. Four cited reasons follow.
 
 Reason 1. Behind on average, so the test hits harder.
 Small firms trail large firms in AI use by about a year. SBA Advocacy reports 6.3 percent of small firms using AI against 11.1 percent of large firms six months earlier, rising only to 8.8 percent now. Source citations 01 plus 02.
